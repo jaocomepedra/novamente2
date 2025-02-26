@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo para os links do menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilo para as seções */
+section {
+    margin: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+/* Estilo para os títulos das seções */
+section h2 {
+    color: #4CAF50;
+}
+
+/* Estilo para caixas de cor */
+.color-box {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+#rgb-box {
+    background-color: rgb(255, 100, 50);
+}
+
+#cmyk-box {
+    background-color: cmyk(50%, 20%, 100%, 10%);
+}

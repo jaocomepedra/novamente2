@@ -1,60 +1,75 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
+:root {
+    --cor-primaria: #0134c2;
+    --cor-secundaria: #0a7ce7;
+    --cor-terciaria: #aee8ff;
+    --cor-quaternaria: #044d75;
+    --cor-quintenaria: #669BBC;
+    --cor-texto: #140049;
+    --cor-fundo: #b2cdff;
 }
 
-/* Estilo para o cabeçalho */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
     padding: 20px;
     text-align: center;
 }
 
-/* Estilo para os links do menu */
-nav ul {
-    list-style-type: none;
-    padding: 0;
+header h1 {
+    margin: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+header p {
+    margin: 5px 0 0;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-/* Estilo para as seções */
 section {
+    padding: 20px;
     margin: 20px;
-    padding: 15px;
-    background-color: #ffffff;
-    border-radius: 5px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
 }
 
-/* Estilo para os títulos das seções */
-section h2 {
-    color: #4CAF50;
+h2 {
+    color: var(--cor-quaternaria);
 }
 
-/* Estilo para caixas de cor */
-.color-box {
-    width: 100px;
-    height: 100px;
-    margin-top: 10px;
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
-#rgb-box {
-    background-color: rgb(255, 100, 50);
+.harmonia-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
 }
 
-#cmyk-box {
-    background-color: cmyk(50%, 20%, 100%, 10%);
+.harmonia-imagens img {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--cor-quaternaria);
+    color: var(--cor-terciaria);
+    width: 100%;
+    margin-top: auto;
 }
